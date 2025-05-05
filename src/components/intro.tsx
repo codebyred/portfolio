@@ -10,7 +10,7 @@ import { HiDownload } from "react-icons/hi";
 
 export default function Intro() {
     return (
-        <section className="max-w-[50rem] text-center mb-28 ">
+        <section className="max-w-[50rem] text-center mb-28 sm:mb-0 ">
             <div className="
                 flex flex-col items-center justify-center
             ">
@@ -87,7 +87,7 @@ export default function Intro() {
                         href="https://www.linkedin.com/in/md-nazmul-haque-redoan-b12a342a7/"
                         target="_blank"
                         className="self-center flex items-center justify-center
-                        bg-white text-gray-700 rounded-full outline-none border-black/10
+                        bg-white text-gray-700 rounded-full outline-none border border-black/10
                         p-4 w-fit h-fit
                         focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-[1.15] transition
                     ">
@@ -97,7 +97,7 @@ export default function Intro() {
                         href="https://github.com/codebyred"
                         target="_blank"
                         className="self-center flex items-center justify-center
-                        bg-white text-gray-700 rounded-full outline-none border-black/10
+                        bg-white text-gray-700 rounded-full outline-none border border-black/10
                         p-4 w-fit h-fit
                         focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-[1.15] transition
                     ">
