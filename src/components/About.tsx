@@ -1,6 +1,6 @@
 "use client"
 import { motion } from "framer-motion";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "./section-heading";
 
 export default function SectionDivider() {
     return (
@@ -9,7 +9,7 @@ export default function SectionDivider() {
             animate={{opacity: 1, y: 0}}
             transition={{delay: 0.175}}
             className="leading-8 text-center
-                mb-28 sm:mb-0 max-w-[50rem] 
+                mb-28 sm:mb-40 max-w-[50rem] 
         ">
             <SectionHeading>About me</SectionHeading>
             <p className="mb-3">
