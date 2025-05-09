@@ -102,4 +102,9 @@ export const skillsData = [
   "Python",
   "Rust",
   "Framer Motion",
+  "Bash",
+  "Assembly",
+  "Tauri",
+  "Cypress",
+  "Postman"
 ] as const;

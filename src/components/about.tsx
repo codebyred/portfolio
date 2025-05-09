@@ -1,9 +1,11 @@
 "use client"
+
 import { motion } from "framer-motion";
 import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
+import { cn } from "@/lib/utils";
 
-export default function SectionDivider() {
+export default function About({className}:{className?: string}) {
 
     const { ref } = useSectionInView("About", 0.75)
 
@@ -14,10 +16,7 @@ export default function SectionDivider() {
             initial={{opacity: 0, y: 100}}
             animate={{opacity: 1, y: 0}}
             transition={{delay: 0.175}}
-            className="leading-8 text-center
-                mb-28 sm:mb-40 max-w-[50rem] 
-                scroll-mt-28
-        ">
+            className={cn(className, "leading-8 text-center  max-w-[50rem]")}>
             <SectionHeading>About me</SectionHeading>
             <p className="mb-3">
                 After graduating with a degree in{" "}
