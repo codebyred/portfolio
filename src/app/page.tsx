@@ -1,4 +1,6 @@
 import About from "@/components/about";
+import Contact from "@/components/contact";
+import Experience from "@/components/experience";
 import Intro from "@/components/intro";
 import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
@@ -12,6 +14,8 @@ export default function Home() {
         <About className="mb-28 sm:mb-40 scroll-mt-28"/>
         <Projects className="scroll-mt-28"/>
         <Skills className="mb-28 sm:mb-40 scroll-mt-28"/>
+        <Experience/>
+        <Contact/>
       </main>
 
   );

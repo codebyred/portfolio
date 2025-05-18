@@ -35,29 +35,30 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Graduated University",
+    location: "Notun Bazar, Dhaka",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I graduated from United International University with a CGPA of 3.67 out of 4.0, having received a 100% scholarship.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2025",
   },
   {
     title: "Full-Stack Developer",
-    location: "Houston, TX",
+    location: "Uttara, Dhaka",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "I worked remotely on a project basis as a Full-Stack Developer at OneVisaHub for 1.5 years.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023-2024",
   },
+  {
+    title: "Full-Stack Developer",
+    location: "NotunBazar, Dhaka",
+    description:
+      "Developed a Online Event Management platform as final year project for University",
+    icon: React.createElement(FaReact),
+    date: "2025",
+  },
+
 ] as const;
 
 export const projectsData = [

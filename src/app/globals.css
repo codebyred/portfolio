@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+
+:root {
+    --border-color: rgba(0, 0, 0, 0.1)
+}
+.borderBlack {
+  border-width: 1px;
+  border-color: var(--border-color);
+}

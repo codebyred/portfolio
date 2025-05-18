@@ -93,7 +93,7 @@ export default function Intro({className}:{className?: string}) {
                         target="_blank"
                         className="self-center flex items-center justify-center
                         bg-white text-gray-700 rounded-full outline-none border border-black/10
-                        p-4 w-fit h-fit
+                        p-4 
                         focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-[1.15] transition
                     ">
                         <BsLinkedin/>
@@ -103,7 +103,7 @@ export default function Intro({className}:{className?: string}) {
                         target="_blank"
                         className="self-center flex items-center justify-center
                         bg-white text-gray-700 rounded-full outline-none border border-black/10
-                        p-4 w-fit h-fit
+                        p-4
                         focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-[1.15] transition
                     ">
                         <BsGithub/>

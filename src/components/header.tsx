@@ -5,6 +5,7 @@ import { links } from "@/lib/data"
 import Link from "next/link"
 import { cn } from "@/lib/utils";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useRef } from "react";
 
 export default function Header() {
 
@@ -54,20 +55,22 @@ export default function Header() {
                                             setTimeOfLastClick(Date.now())
                                         }}
                                     >
-                                        {
-                                            link.name === activeSection && 
-                                            (<motion.span 
-                                                layout
-                                                className="bg-gray-100 rounded-full inset-0 absolute -z-10"
-                                                layoutId="activeSection"
-                                                transition={{
-                                                    type: "spring",
-                                                    stiffness: 380,
-                                                    damping: 40,
-                                                }}
-                                            >
-                                            </motion.span>)
-                                        }
+                                       
+                                        <motion.span
+                                            
+                                            className={cn({
+                                                "bg-gray-100 rounded-full inset-0 absolute -z-10": link.name === activeSection,
+                                                "-z-100": link.name !== activeSection
+                                            })}
+                                            layoutId="active-section"
+                                            transition={{
+                                                type: "spring",
+                                                stiffness: 380,
+                                                damping: 40,
+                                            }}
+                                        >
+                                        </motion.span>
+                                        
                                         {link.name}
                                     </Link>
                                 </motion.li>
@@ -82,6 +85,3 @@ export default function Header() {
 }   
 
 
-function Cursor() {
-    
-}
