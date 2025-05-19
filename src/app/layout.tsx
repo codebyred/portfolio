@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
-import { SlideTabsExample } from "@/components/header2"
 import ActiveSectionContextProvider from "@/context/active-section-context";
+import Footer from "@/components/footer";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -48,7 +49,9 @@ export default function RootLayout({
         <ActiveSectionContextProvider>
           <Header/>
           {children}
+          <Toaster position="top-right"/>
         </ActiveSectionContextProvider>
+        <Footer/>
       </body>
     </html>
   );
